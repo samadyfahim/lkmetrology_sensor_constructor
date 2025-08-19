@@ -1,11 +1,14 @@
 #pragma once
 #include <QWidget>
 
-/**
- * @brief Widget showing logo and title at the top.
- */
+class QLabel;
+
 class TopBarWidget : public QWidget {
     Q_OBJECT
 public:
     explicit TopBarWidget(QWidget *parent = nullptr);
+
+private:
+    QLabel *logo;
+    QLabel *title;
 };

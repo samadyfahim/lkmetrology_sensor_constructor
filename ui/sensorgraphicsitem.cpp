@@ -1,4 +1,5 @@
-#include "SensorGraphicsItem.h"
+#include "sensorgraphicsitem.h"
+#include <QGraphicsSceneMouseEvent>
 
 SensorGraphicsItem::SensorGraphicsItem(const QPixmap &pix, const Component &c)
     : QGraphicsPixmapItem(pix), comp(c) {

@@ -1,14 +1,12 @@
 #pragma once
 #include <QObject>
 #include <QGraphicsPixmapItem>
-#include <QGraphicsSceneMouseEvent>
-#include "component.h"   // your struct/class definition
+#include "../models/component.h"
 
+// Represents a draggable/clickable component in scene
 class SensorGraphicsItem : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
-    Component comp;
-
     SensorGraphicsItem(const QPixmap &pix, const Component &c);
 
 signals:
@@ -16,4 +14,7 @@ signals:
 
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
+
+private:
+    Component comp;
 };
