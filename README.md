@@ -8,6 +8,6 @@ Built with QT6 using C++
 
 ## Run instructions
 
-Install QT6 Creator from <a>https://www.qt.io/download-dev</a>
-Click "Open project" ans select the CMake file from the repository.
-Build & Run
+Install QT6 Creator from <a>https://www.qt.io/download-dev</a><br>
+Click "Open project" ans select the CMake file from the repository.<br>
+Build & Run<br>
