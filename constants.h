@@ -12,4 +12,7 @@ namespace Constants {
     const inline QString BUTTON_STYLE_SECONDARY =
         "padding: 12px; font-size: 14px; border-radius: 8px;"
         "background-color: #e53c2d; color: white; border:none;";
+    const inline QString BUTTON_STYLE_DEFAULT =
+        "padding: 12px; font-size: 14px; border-radius: 8px;"
+        "background-color: white; color: black; border:1px solid;";
 }

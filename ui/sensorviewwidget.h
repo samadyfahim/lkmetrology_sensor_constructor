@@ -3,6 +3,7 @@
 #include "../models/component.h"
 
 class QGraphicsScene;
+class QPushButton;
 
 class SensorViewWidget : public QGraphicsView {
     Q_OBJECT
@@ -12,9 +13,11 @@ public:
 
 signals:
     void componentClicked(const Component &comp);
+    void clearRequested();
 
 private:
     QGraphicsScene *scene;
+    QPushButton *btnClear;
     
     static QPixmap scalePixmap(const QPixmap &pix, int viewHeight, double totalHeight);
 };

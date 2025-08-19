@@ -66,6 +66,13 @@ void MainWindow::setupLayout() {
         currentSelection = c;
         detailsPanel->showDetails(c);
     });
+
+    connect(sensorView, &SensorViewWidget::clearRequested, this, [=]() {
+        sensorController.clearSensor();
+        sensorView->displaySensor({});
+    });
+
+
 }
 
 

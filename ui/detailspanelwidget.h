@@ -15,10 +15,13 @@ public:
 signals:
     void addClicked();
     void calculateClicked();
+    void clearClicked();
 
 private:
+    QLabel *lblImage;
     QLabel *lblDetails;
     QLabel *lblCalcResult;
+    QLabel *lblFormula;
     QPushButton *btnAdd;
     QPushButton *btnCalc;
     

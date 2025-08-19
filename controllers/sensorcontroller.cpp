@@ -27,6 +27,7 @@ void SensorController::clearSensor() {
     sensor.clear();
 }
 
+
 QString SensorController::calculateResult() const {
     QStringList required = {"Head", "Probe", "Module", "Tip"};
     for (auto &r : required) {

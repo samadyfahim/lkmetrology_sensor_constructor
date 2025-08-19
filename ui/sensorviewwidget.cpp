@@ -1,13 +1,34 @@
 #include "sensorviewwidget.h"
 #include "sensorgraphicsitem.h"
+#include "../constants.h"
 #include <QGraphicsScene>
 #include <QPixmap>
+#include <QPushButton>
+
 
 SensorViewWidget::SensorViewWidget(QWidget *parent) : QGraphicsView(parent) {
     scene = new QGraphicsScene(this);
     setScene(scene);
     setFixedHeight(400);
+
+    // --- Clear Button ---
+    btnClear = new QPushButton("Clear Sensor", this);
+    btnClear->setStyleSheet(
+        Constants::BUTTON_STYLE_DEFAULT +
+        " margin: 16px;"
+        );
+
+
+    // Position it at the top-right corner
+    btnClear->raise(); // Ensure it appears on top of the canvas
+
+    // Connect to a signal to notify MainWindow
+    connect(btnClear, &QPushButton::clicked, this, [=]() {
+        emit clearRequested();
+    });
 }
+
+
 
 void SensorViewWidget::displaySensor(const QList<Component> &sensor) {
     scene->clear();
@@ -43,3 +64,4 @@ QPixmap SensorViewWidget::scalePixmap(const QPixmap &pix, int viewHeight, double
     double scaleFactor = static_cast<double>(viewHeight) / totalHeight;
     return pix.scaled(pix.width() * scaleFactor, pix.height() * scaleFactor, Qt::KeepAspectRatio);
 }
+
