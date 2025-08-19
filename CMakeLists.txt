@@ -30,6 +30,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(lkmetrology_sensor_constructor
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        mainwidget.h mainwidget.cpp
+        topbarwidget.h topbarwidget.cpp
+        cataloguetabswidget.h cataloguetabswidget.cpp
+        sidepanelwidget.h sidepanelwidget.cpp
+        cataloguemanager.h cataloguemanager.cpp
+        sensormodel.h sensormodel.cpp
+        sensorview.h sensorview.cpp
+
+
+
     )
     qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 else()

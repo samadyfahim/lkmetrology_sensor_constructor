@@ -1,14 +1,13 @@
-#ifndef COMPONENT_H
-#define COMPONENT_H
-
+#pragma once
 #include <QString>
 
+/**
+ * @brief Represents a single sensor component
+ */
 struct Component {
     QString name;
     QString type;
-    double length;
-    double cte;
-    QString imagePath; // path to image file
+    double length;      ///< in millimeters
+    double cte;         ///< coefficient of thermal expansion
+    QString imagePath;  ///< Qt resource path to component image
 };
-
-#endif // COMPONENT_H
