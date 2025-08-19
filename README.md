@@ -1,6 +1,6 @@
 # LK METROLOGY Sensor Constructor
 
-Buils with QT6 using C++
+Built with QT6 using C++
 
 ## Demo
 
