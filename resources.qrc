@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="ProbeB">resources/images/ProbeB.png</file>
+        <file alias="ProbeA">resources/images/ProbeA.png</file>
+        <file alias="ModuleB-1">resources/images/ModuleB-1.png</file>
+        <file alias="ModuleA-3">resources/images/ModuleA-3.png</file>
+        <file alias="ModuleA-2">resources/images/ModuleA-2.png</file>
+        <file alias="ModuleA-1">resources/images/ModuleA-1.png</file>
+        <file alias="Head">resources/images/Head.png</file>
+        <file alias="5mmX50mmTip">resources/images/5mmX50mmTip.png</file>
+        <file alias="3mmX30mmTip">resources/images/3mmX30mmTip.png</file>
+        <file alias="1mmX20mmTip">resources/images/1mmX20mmTip.png</file>
+    </qresource>
+    <qresource prefix="/logo">
+        <file alias="logo">resources/logo/logo.png</file>
+    </qresource>
+</RCC>
