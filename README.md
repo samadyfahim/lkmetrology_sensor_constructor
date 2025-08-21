@@ -1,6 +1,10 @@
 made by Fahim Samady<br>
 time spent: 2 hours
 
+# Demo
+
+https://github.com/user-attachments/assets/17834d6f-c25a-46eb-8036-2473615b613c
+
 # LK METROLOGY Sensor Constructor
 
 Built with QT6 using C++
