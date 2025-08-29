@@ -3,7 +3,10 @@ time spent: 2 hours
 
 # Demo
 
-https://github.com/user-attachments/assets/17834d6f-c25a-46eb-8036-2473615b613c
+
+https://github.com/user-attachments/assets/0ac6783a-715d-4bf0-b40c-15beea790619
+
+
 
 # LK METROLOGY Sensor Constructor
 
